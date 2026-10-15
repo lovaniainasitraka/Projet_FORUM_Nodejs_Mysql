@@ -1,0 +1,21 @@
+{
+  "name": "forum-web",
+  "version": "1.0.0",
+  "description": "Forum web avec MySQL, bcrypt et UUID",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:local": "set DB_HOST=127.0.0.1&& set DB_PORT=3307&& set DB_USER=forum_user&& set DB_PASSWORD=Forum2026!&& set PORT=8080&& node server.js",
+    "seed": "node seed.js",
+    "seed:local": "set DB_HOST=127.0.0.1&& set DB_PORT=3307&& set DB_USER=forum_user&& set DB_PASSWORD=Forum2026!&& node seed.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "uuid": "^9.0.0"
+  }
+}
